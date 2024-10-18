@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>曲尽河星稀</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="content-wrapper">
+        <div class="left-content">
+            <div class="avatar" onclick="showAvatarMessage(event)">
+                <img src="avatar.jpg" alt="头像">
+            </div>
+            <h1 class="quote">曲尽河星稀</h1>
+            <div id="avatarMessage" class="avatar-message">
+                <p>好好爱自己</p>
+                <p>微信号：xq372802</p>
+            </div>
+        </div>
+        <div class="right-content">
+            <div class="seasons">
+                <span>春</span>
+                <span>夏</span>
+                <span>秋</span>
+                <span>冬</span>
+            </div>
+            <div class="image-gallery">
+                <div class="image-wrapper"><img src="image1.jpg" alt="图片1" onclick="openModal('content1')"></div>
+                <div class="image-wrapper"><img src="image2.jpg" alt="图片2" onclick="openModal('content2')"></div>
+                <div class="image-wrapper"><img src="image3.jpg" alt="图片3" onclick="openModal('content3')"></div>
+                <div class="image-wrapper"><img src="image4.jpg" alt="图片4" onclick="openModal('content4')"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modalCategories"></div>
+            <div id="modalSubcontent"></div>
+        </div>
+    </div>
+
+    <!-- 添加音乐播放器和控制按钮 -->
+    <audio id="bgMusic" loop>
+        <source src="take_my_hand.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <button id="musicToggle" class="music-toggle">音乐开/关</button>
+
+    <script src="content.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
